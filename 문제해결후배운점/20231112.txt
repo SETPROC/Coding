@@ -16,3 +16,8 @@ bool연산을 통해 False로 바꿔주고 이것을 int로 변환하면 0이 �
 num % n이 0일 경우,
 bool연산을 통해 True로 바꿔주고 이것을 int로 변환하면 1이 되는 것으로
 if문을 대체한 것이 새로웠다.
+
+4. 조건 문자열 中
+def solution(ineq, eq, n, m):
+    return int(eval(str(n)+ineq+eq.replace('!', '')+str(m)))
+eval 함수를 사용하여 문자열 처리를 통한 비교를 할 수 있다는 것을 알았다.
