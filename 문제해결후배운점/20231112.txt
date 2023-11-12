@@ -7,3 +7,12 @@ print(f"{n} is {'eovdedn'[n&1::2]}")
 def solution(a, b):
     return int(max(f"{a}{b}", f"{b}{a}"))
 max함수를 사용할 때 문자열로도 구분할 수 있는 것을 알았다.
+
+3. n의 배수 中
+def solution(num, n):
+    return int(not(num % n))
+num % n이 1일 경우,
+bool연산을 통해 False로 바꿔주고 이것을 int로 변환하면 0이 되고
+num % n이 0일 경우,
+bool연산을 통해 True로 바꿔주고 이것을 int로 변환하면 1이 되는 것으로
+if문을 대체한 것이 새로웠다.
