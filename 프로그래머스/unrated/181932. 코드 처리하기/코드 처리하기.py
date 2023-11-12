@@ -16,6 +16,5 @@ def solution(code):
                  mode = 0
     if not(answer):
         return "EMPTY"
-    print(answer)
     
     return answer
