@@ -2,3 +2,8 @@
 n=int(input())
 print(f"{n} is {'eovdedn'[n&1::2]}")
 문자열을 슬라이싱, 스탭을 통하여 접근하는 방식이 새로웠다.
+
+2. 더 크게 합치기 中
+def solution(a, b):
+    return int(max(f"{a}{b}", f"{b}{a}"))
+max함수를 사용할 때 문자열로도 구분할 수 있는 것을 알았다.
