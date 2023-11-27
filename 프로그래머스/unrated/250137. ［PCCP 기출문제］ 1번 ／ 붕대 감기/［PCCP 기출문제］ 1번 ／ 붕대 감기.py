@@ -15,7 +15,7 @@ def solution(bandage, health, attacks):
     h_max = health
     
     for i in range(0,t+1):
-        print(i,health,c,idx)
+        #print(i,health,c,idx)
         if health <= 0:
             return -1
         else:
@@ -25,7 +25,7 @@ def solution(bandage, health, attacks):
                     health  -= attacks[idx][1]
                     c = 0
                     idx += 1
-                    print(i,health,c,idx)
+                    #print(i,health,c,idx)
                 else:
                     return -1
             else:
@@ -33,21 +33,22 @@ def solution(bandage, health, attacks):
                 if health + bandage[1] >= h_max:
                     health = h_max
                     c += 1
-                    print(i,health,c,idx)
+                    #print(i,health,c,idx)
                 else:
                     health += bandage[1]
                     c += 1
-                    print(i,health,c,idx)
+                    #print(i,health,c,idx)
                 
+                #붕대 시전 시간 충족
                 if c == bandage[0]:
                     if health + bandage[2] >= h_max:
                         health = h_max
                         c = 0
-                        print(i,health,c,idx)
+                        #print(i,health,c,idx)
                     else:
                         health += bandage[2]
                         c = 0
-                        print(i,health,c,idx)
+                        #print(i,health,c,idx)
     return health
                 
                     
